@@ -1,0 +1,68 @@
+/* section 5 */
+.bg-5 {
+  width: 100%;
+  height: 524px;
+  background: url("../../images/pexels-christina-morillo-1181675.png");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-5 h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  border: none;
+  width: 316px;
+  height: 46px;
+  padding-left: 24px;
+
+  font-size: 14px;
+}
+
+.input-text::placeholder {
+  width: 39px;
+  height: 20px;
+
+  color: #373737;
+  opacity: 0.5;
+}
+
+.form-custombutton {
+  width: 66px;
+  height: 46px;
+  background: #00AFDB;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  cursor: pointer;
+}
+
+.form-custombutton:hover {
+  background: #009CC2;
+}
+
+.form img {
+  width: 16.52px;
+  height: 13.22px;
+}

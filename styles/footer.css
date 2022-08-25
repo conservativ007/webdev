@@ -1,0 +1,43 @@
+footer {
+  width: 100%;
+  height: 185px;
+  top: 3920px;
+  background: #000;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer nav {
+  width: 330px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  color: white;
+  cursor: pointer;
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+.copyright {
+  height: 20px;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #818181;
+}
+
+.get-started:hover,
+.apple:hover,
+.android:hover {
+  background: #009CC2;
+}
