@@ -69,3 +69,19 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 599px) {
+  .bg-4 {
+    height: 780px;
+    flex-direction: column-reverse;
+  }
+
+  .content-block {
+    height: 150px;
+  }
+
+  .content-image-2 {
+    width: 380px;
+    height: 545px;
+  }
+}

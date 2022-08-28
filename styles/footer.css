@@ -64,3 +64,22 @@ footer ul li {
     width: 210px;
   }
 }
+
+@media (max-width: 599px) {
+
+
+  footer nav ul {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  footer nav ul li:nth-child(even) {
+    display: none;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}

@@ -66,3 +66,19 @@
     width: 260px;
   }
 }
+
+@media (max-width: 599px) {
+  .bg-2 {
+    height: 800px;
+    flex-direction: column-reverse;
+  }
+
+  .content-image-1 {
+    width: 380px;
+    height: 545px;
+  }
+
+  .content-block-bg-2 {
+    height: 180px;
+  }
+}

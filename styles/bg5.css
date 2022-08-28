@@ -102,3 +102,9 @@
     height: 35px;
   }
 }
+
+@media (max-width: 599px) {
+  .bg-5 {
+    height: 125px;
+  }
+}
