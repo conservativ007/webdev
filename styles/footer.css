@@ -52,3 +52,15 @@ footer ul li {
     width: 260px;
   }
 }
+
+@media (max-width: 899px) {
+  footer {
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  footer nav {
+    width: 210px;
+  }
+}

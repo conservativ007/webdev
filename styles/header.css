@@ -56,12 +56,10 @@ h1 {
   text-transform: uppercase;
 }
 
-.text-print {
+.header-content__text {
   width: 504px;
   height: 50px;
 
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 140%;
 
@@ -69,25 +67,7 @@ h1 {
   color: #FFFFFF;
 }
 
-.one {
-  top: 405px;
-}
 
-.get-started {
-  border: none;
-
-  height: 46px;
-  width: 184px;
-  background: #00AFDB;
-  color: white;
-  text-transform: uppercase;
-}
-
-.get-started span {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16, 41px;
-}
 
 .social {
   margin-bottom: 50px;
@@ -97,4 +77,61 @@ h1 {
   width: 170px;
   height: 20px;
   color: white;
+}
+
+@media (max-width: 1599px) {
+  header {
+    height: 558px;
+  }
+}
+
+@media (max-width: 1199px) {
+  header {
+    height: 440px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .header-content {
+    height: 200px;
+  }
+
+  .header-content__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 899px) {
+
+  header {
+    height: 279px;
+  }
+
+  header nav,
+  header ul {
+    margin-top: 2px;
+    width: 500px;
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .header-content {
+    height: 120px;
+  }
+
+  .header-content__text {
+    font-size: 13px;
+  }
+
+  .social {
+    margin-bottom: 10px;
+  }
+
+
 }

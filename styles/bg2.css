@@ -12,6 +12,8 @@
   width: 407px;
   height: 582px;
   background: url("../../images/content-image-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content-block-bg-2 {
@@ -43,4 +45,24 @@
 
 .content-block-bg-2 span {
   font-weight: 500;
+}
+
+@media (max-width: 899px) {
+  .bg-2 {
+    height: 600px;
+  }
+
+  .content-image-1 {
+    width: 250px;
+    height: 430px;
+  }
+
+  .content-block-bg-2 h2 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .content-block-bg-2 {
+    width: 260px;
+  }
 }

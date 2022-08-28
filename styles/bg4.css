@@ -10,7 +10,10 @@
 .content-image-2 {
   width: 407px;
   height: 582px;
+
   background: url("../../images/content-image-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .content-block {
@@ -46,7 +49,23 @@
   color: #4E4E4E;
 }
 
-.content-block button {
-  width: 180px;
-  height: 46px;
+
+@media (max-width: 899px) {
+
+  .bg-4 {
+    height: 520px;
+  }
+
+  .content-image-2 {
+    width: 250px;
+    height: 357px;
+  }
+
+  .content-block {
+    width: 280px;
+  }
+
+  .content-block h2 {
+    font-size: 20px;
+  }
 }
