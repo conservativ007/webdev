@@ -8,8 +8,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body::after {
+  content: "big-desktop";
+  font-size: 0;
+}
+
 .wrapper {
   max-width: 1600px;
+  height: 100vh;
   position: relative;
   margin: 0 auto;
 }
@@ -32,45 +38,6 @@ body {
   line-height: 16, 41px;
 }
 
-@media (max-width: 1599px) {
-  .wrapper {
-    width: 1200px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .wrapper {
-    width: 900px;
-  }
-}
-
-@media (max-width: 899px) {
-  .wrapper {
-    width: 600px;
-  }
-
-  .get-started {
-    width: 120px;
-    height: 33px;
-    text-transform: none;
-    font-variant: small-caps;
-  }
-
-  .get-started>span {
-    font-weight: 400;
-  }
-}
-
-@media (max-width: 599px) {
-  .wrapper {
-    width: 380px;
-  }
-
-  .get-started {
-    display: none;
-  }
-}
-
 .background-image {
   position: absolute;
   width: 100%;
@@ -88,4 +55,67 @@ body {
   object-fit: cover;
   object-position: 50% 50%;
   z-index: -1;
+}
+
+
+
+@media (max-width: 1599px) {
+  .wrapper {
+    width: 1200px;
+  }
+
+
+
+  body::after {
+    content: "desktop";
+    font-size: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .wrapper {
+    width: 900px;
+  }
+
+  body::after {
+    content: "laptop-portrait";
+    font-size: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    width: 600px;
+  }
+
+  .get-started {
+    width: 120px;
+    height: 33px;
+    text-transform: none;
+    font-variant: small-caps;
+  }
+
+  .get-started>span {
+    font-weight: 400;
+  }
+
+  body::after {
+    content: "laptop";
+    font-size: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .wrapper {
+    width: 380px;
+  }
+
+  .get-started {
+    display: none;
+  }
+
+  body::after {
+    content: "phone";
+    font-size: 0;
+  }
 }

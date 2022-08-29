@@ -67,6 +67,10 @@ footer ul li {
 
 @media (max-width: 599px) {
 
+  footer {
+    padding: 0 10px;
+  }
+
 
   footer nav ul {
     height: 100px;
