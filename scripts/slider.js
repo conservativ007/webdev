@@ -2,11 +2,10 @@
 (function () {
   [...Array(5)].forEach((_, index) => {
     let image = document.createElement("img");
-    image.src = `../images/forest/forest${index + 1}.jpg`;
+    image.src = `./images/forest/forest${index + 1}.jpg`;
     image.alt = "forest";
-    document.querySelector(".clider-items__images").append(image)
+    document.querySelector(".clider-items__images").append(image);
   });
-
 })();
 
 
@@ -31,6 +30,7 @@
     "big-desktop": 400,
   }
 
+  // need to get correct position to screen 
   setInterval(() => {
     section.style.left = containerImagesSettings[getDevice()] + "px";
   }, 100);
