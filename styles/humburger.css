@@ -74,7 +74,11 @@
 
 /* menu */
 .menu__box {
-  display: block;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+
   position: absolute;
   top: 0;
   left: -130%;
@@ -90,13 +94,24 @@
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
   color: #dfe6e9;
   font-family: 'Roboto', sans-serif;
+}
+
+.menu__item:first-child {
+  position: absolute;
+  bottom: 3vh;
+  right: 3vh;
+  font-size: 12px;
+}
+
+.menu__item:last-child {
   font-size: 20px;
   font-weight: 600;
-  text-decoration: none;
-  transition-duration: .25s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu__item:hover {

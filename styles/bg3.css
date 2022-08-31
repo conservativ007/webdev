@@ -100,7 +100,7 @@
   left: 0;
   top: 25px;
 
-  transition: 1s;
+  transition: .5s;
 }
 
 .clider-items__images img {

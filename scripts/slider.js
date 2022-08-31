@@ -4,6 +4,7 @@
     let image = document.createElement("img");
     image.src = `./images/forest/forest${index + 1}.jpg`;
     image.alt = "forest";
+    image.className = "images";
     document.querySelector(".clider-items__images").append(image);
   });
 })();
@@ -43,8 +44,10 @@ document.addEventListener("click", e => {
 });
 
 
-const movieSlide = {
+export const movieSlide = {
   counter: 0,
+  moveLeft: false,
+  moveRight: false,
 
   nextSlide(bool) {
     let imageWidth = document.querySelector(".slider-items").querySelector("img").offsetWidth;
@@ -67,14 +70,18 @@ const movieSlide = {
 
     if (Number(counter) <= 1 || Number(counter) === 0) {
       arrowLeft.style.zIndex = -1;
+      this.moveLeft = false;
     } else {
       arrowLeft.style.zIndex = 1;
+      this.moveLeft = true;
     }
 
     if (Number(counter) >= 5) {
       arrowRight.style.zIndex = -1;
+      this.moveRight = false;
     } else {
       arrowRight.style.zIndex = 1;
+      this.moveRight = true;
     }
   }
 }
